@@ -77,55 +77,6 @@ const generateClass = function () {
   console.timeEnd(logName);
   current.ret++;
 };
-
-
-// プロトタイプの定義 ---------------------------
-const definitionPrototype = function () {
-  const logName = current.name + ":" + current.ret;
-
-  console.time(logName);
-
-  for (let i = 0; i < DEFINITION_MAX_COUNT; i++) {
-
-    // Prototype式
-    function PrototypePiyo() {
-      this.piyo = 0;
-    }
-
-    PrototypePiyo.prototype.piyo = function () {
-      this.piyo;
-    };
-  }
-
-  console.timeEnd(logName);
-  current.ret++;
-};
-
-// クラスの定義 ---------------------------
-const definitionClass = function () {
-  const logName = current.name + ":" + current.ret;
-
-  console.time(logName);
-
-  for (let i = 0; i < DEFINITION_MAX_COUNT; i++) {
-    // Class式
-    class ClassPiyo {
-      constructor() {
-        this.a = 0;
-      }
-
-      piyo() {
-        this.piyo;
-      }
-    }
-  }
-
-  console.timeEnd(logName);
-  current.ret++;
-};
-
-
-
 // constで変数を定義する
 const constLoop = function () {
 
@@ -364,8 +315,6 @@ window.onload = function () {
   // generateClass.js
   checkList.push({func: generateClass, name: 'generate-class', ret: 0});
   checkList.push({func: generatePrototype, name: 'generate-prototype', ret: 0});
-  checkList.push({func: definitionClass, name: 'definition-class', ret: 0});
-  checkList.push({func: definitionPrototype, name: 'definition-prototype', ret: 0});
 
   // 開始クラスを設定する
   current = checkList[0];

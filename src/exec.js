@@ -30,8 +30,6 @@ window.onload = function () {
   // generateClass.js
   checkList.push({func: generateClass, name: 'generate-class', ret: 0});
   checkList.push({func: generatePrototype, name: 'generate-prototype', ret: 0});
-  checkList.push({func: definitionClass, name: 'definition-class', ret: 0});
-  checkList.push({func: definitionPrototype, name: 'definition-prototype', ret: 0});
 
   // 開始クラスを設定する
   current = checkList[0];
