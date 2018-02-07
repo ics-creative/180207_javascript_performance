@@ -1,0 +1,18 @@
+{
+  "name": "source",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "join": "concat -o main.js ./src/init.js ./src/emptyLoop.js  ./src/generateClass.js ./src/declaration.js ./src/func.js ./src/pow.js ./src/joinString.js ./src/exec.js",
+    "watch": "watch 'npm run join' ./src"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "concat": "^1.0.3"
+  }
+}
