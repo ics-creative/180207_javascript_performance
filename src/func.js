@@ -31,7 +31,7 @@ const execFunc3 = function () {
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
-    callFunc3(0);;
+    callFunc3(0);
   }
 
   console.timeEnd(logName);

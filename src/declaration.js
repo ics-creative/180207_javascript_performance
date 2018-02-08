@@ -2,6 +2,7 @@
 const constLoop = function () {
 
   const logName = current.name + ":" + current.ret;
+
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
@@ -22,7 +23,6 @@ const varLoop = function () {
 
   const logName = current.name + ":" + current.ret;
 
-
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
@@ -40,7 +40,6 @@ const varLoop = function () {
 const letLoop = function () {
 
   const logName = current.name + ":" + current.ret;
-
 
   console.time(logName);
 

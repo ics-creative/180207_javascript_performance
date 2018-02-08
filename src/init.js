@@ -2,7 +2,6 @@
 // main.jsはsrcフォルダーのjsファイルを結合しています。
 
 const MAX_COUNT = 1000000;
-const DEFINITION_MAX_COUNT = 1000;
 const CHECK_COUNT = 10;
 const checkList = [];
 

@@ -1,4 +1,3 @@
-
 const pow1 = function () {
 
   const logName = current.name + ":" + current.ret;
