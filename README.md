@@ -1,7 +1,7 @@
 # JavaScript Performance
 
 ## 実行
-index.htmlをブラウザーで開いて、各開発者ツールでログ出力を確認ください。
+dist/index.htmlをブラウザーで開いて、各開発者ツールでログ出力を確認ください。
 
 ## ビルド
 ```
