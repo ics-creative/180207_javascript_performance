@@ -15,7 +15,7 @@ class ClassHoge {
   }
 
   hoge(val) {
-    this.a;
+    return val + val;
   }
 }
 const classHoge = new ClassHoge();
@@ -26,14 +26,17 @@ function PrototypeHoge() {
 }
 
 PrototypeHoge.prototype.hoge = function (val) {
-  this.a;
+  return val + val;
 };
 const prototypeHoge = new PrototypeHoge();
 
 
 const callFunc1 = function (x) {
+  return x + x;
 };
 const callFunc2 = (x) => {
+  return x + x;
 };
 const callFunc3 = x => {
+  return x + x;
 };

@@ -15,7 +15,7 @@ class ClassHoge {
   }
 
   hoge(val) {
-    this.a;
+    return val + val;
   }
 }
 const classHoge = new ClassHoge();
@@ -26,16 +26,19 @@ function PrototypeHoge() {
 }
 
 PrototypeHoge.prototype.hoge = function (val) {
-  this.a;
+  return val + val;
 };
 const prototypeHoge = new PrototypeHoge();
 
 
 const callFunc1 = function (x) {
+  return x + x;
 };
 const callFunc2 = (x) => {
+  return x + x;
 };
 const callFunc3 = x => {
+  return x + x;
 };
 // 空のループを回した場合
 const emptyLoop = function () {
@@ -80,6 +83,7 @@ const generateClass = function () {
 const constLoop = function () {
 
   const logName = current.name + ":" + current.ret;
+
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
@@ -100,7 +104,6 @@ const varLoop = function () {
 
   const logName = current.name + ":" + current.ret;
 
-
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
@@ -118,7 +121,6 @@ const varLoop = function () {
 const letLoop = function () {
 
   const logName = current.name + ":" + current.ret;
-
 
   console.time(logName);
 
@@ -221,9 +223,9 @@ const pow2 = function () {
 
   const logName = current.name + ":" + current.ret;
   console.time(logName);
-for (let i = 0; i < MAX_COUNT; i++) {
-  Math.pow(2, 5);
-}
+  for (let i = 0; i < MAX_COUNT; i++) {
+    Math.pow(2, 5);
+  }
   console.timeEnd(logName);
   current.ret++;
 };
@@ -233,9 +235,9 @@ const pow3 = function () {
   const logName = current.name + ":" + current.ret;
   console.time(logName);
 
-for (let i = 0; i < MAX_COUNT; i++) {
-  2 ** 5;
-}
+  for (let i = 0; i < MAX_COUNT; i++) {
+    2 ** 5;
+  }
 
   console.timeEnd(logName);
   current.ret++;
@@ -246,16 +248,16 @@ const templateLiteral = function () {
 
   const logName = current.name + ":" + current.ret;
   console.time(logName);
-for (let i = 0; i < MAX_COUNT; i++) {
-  const a = "a";
-  const b = "b";
-  const c = "c";
-  const d = "d";
-  const e = "e";
-  const f = "f";
+  for (let i = 0; i < MAX_COUNT; i++) {
+    const a = "a";
+    const b = "b";
+    const c = "c";
+    const d = "d";
+    const e = "e";
+    const f = "f";
 
-  `${a}_${b}_${c}_${d}_${e}_${f}`;
-}
+    `${a}_${b}_${c}_${d}_${e}_${f}`;
+  }
 
   console.timeEnd(logName);
   current.ret++;
@@ -266,16 +268,16 @@ const normalJoin = function () {
   const logName = current.name + ":" + current.ret;
   console.time(logName);
 
-for (let i = 0; i < MAX_COUNT; i++) {
-  const a = "a";
-  const b = "b";
-  const c = "c";
-  const d = "d";
-  const e = "e";
-  const f = "f";
+  for (let i = 0; i < MAX_COUNT; i++) {
+    const a = "a";
+    const b = "b";
+    const c = "c";
+    const d = "d";
+    const e = "e";
+    const f = "f";
 
-  a + "_" + b + "_" + c + "_" + d + "_" + e + "_" + f;
-}
+    a + "_" + b + "_" + c + "_" + d + "_" + e + "_" + f;
+  }
 
   console.timeEnd(logName);
   current.ret++;
