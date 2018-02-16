@@ -43,7 +43,7 @@ const callFunc3 = x => {
 // 空のループを回した場合
 const emptyLoop = function () {
 
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
@@ -54,7 +54,7 @@ const emptyLoop = function () {
 };
 // プロトタイプの生成 ---------------------------
 const generatePrototype = function () {
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
 
   console.time(logName);
 
@@ -68,7 +68,7 @@ const generatePrototype = function () {
 
 // クラスの生成 ---------------------------
 const generateClass = function () {
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
 
   console.time(logName);
 
@@ -82,15 +82,15 @@ const generateClass = function () {
 // constで変数を定義する
 const constLoop = function () {
 
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
 
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
-    const a = "a";
-    const b = "b";
-    const c = "c";
-    const d = "d";
+    const a = 'a';
+    const b = 'b';
+    const c = 'c';
+    const d = 'd';
 
     `${a}_${b}_${c}_${d}`;
   }
@@ -102,33 +102,33 @@ const constLoop = function () {
 // varで変数を定義する
 const varLoop = function () {
 
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
 
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
-    var a = "a";
-    var b = "b";
-    var c = "c";
-    var d = "d";
+    var a = 'a';
+    var b = 'b';
+    var c = 'c';
+    var d = 'd';
     `${a}_${b}_${c}_${d}`;
   }
-  console.timeEnd(current.name + ":" + current.ret);
+  console.timeEnd(current.name + ':' + current.ret);
   current.ret++;
 };
 
 // letで変数を定義する
 const letLoop = function () {
 
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
 
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
-    let a = "a";
-    let b = "b";
-    let c = "c";
-    let d = "d";
+    let a = 'a';
+    let b = 'b';
+    let c = 'c';
+    let d = 'd';
     `${a}_${b}_${c}_${d}`;
   }
 
@@ -139,7 +139,7 @@ const letLoop = function () {
 // 普通の関数呼び出し ----------------------------
 const execFunc1 = function () {
 
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
@@ -152,7 +152,7 @@ const execFunc1 = function () {
 // アロー関数呼び出し ----------------------------
 const execFunc2 = function () {
 
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
   console.time(logName);
   for (let i = 0; i < MAX_COUNT; i++) {
     callFunc2(0);
@@ -165,7 +165,7 @@ const execFunc2 = function () {
 
 // アロー関数・カッコを省略呼び出し ----------------------------
 const execFunc3 = function () {
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
@@ -179,7 +179,7 @@ const execFunc3 = function () {
 
 // プロトタイプの関数を呼び出す ---------------------------
 const execPrototype = function () {
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
 
   console.time(logName);
 
@@ -193,7 +193,7 @@ const execPrototype = function () {
 
 // クラスの関数を呼び出す ---------------------------
 const execClass = function () {
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
 
   console.time(logName);
 
@@ -208,7 +208,7 @@ const execClass = function () {
 
 const pow1 = function () {
 
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
@@ -221,7 +221,7 @@ const pow1 = function () {
 
 const pow2 = function () {
 
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
   console.time(logName);
   for (let i = 0; i < MAX_COUNT; i++) {
     Math.pow(2, 5);
@@ -232,7 +232,7 @@ const pow2 = function () {
 
 const pow3 = function () {
 
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
@@ -246,15 +246,15 @@ const pow3 = function () {
 // テンプレートリテラルを使って文字列を結合する ----------------------------
 const templateLiteral = function () {
 
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
   console.time(logName);
   for (let i = 0; i < MAX_COUNT; i++) {
-    const a = "a";
-    const b = "b";
-    const c = "c";
-    const d = "d";
-    const e = "e";
-    const f = "f";
+    const a = 'a';
+    const b = 'b';
+    const c = 'c';
+    const d = 'd';
+    const e = 'e';
+    const f = 'f';
 
     `${a}_${b}_${c}_${d}_${e}_${f}`;
   }
@@ -265,18 +265,18 @@ const templateLiteral = function () {
 
 // 普通に文字列を結合する ----------------------------
 const normalJoin = function () {
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
   console.time(logName);
 
   for (let i = 0; i < MAX_COUNT; i++) {
-    const a = "a";
-    const b = "b";
-    const c = "c";
-    const d = "d";
-    const e = "e";
-    const f = "f";
+    const a = 'a';
+    const b = 'b';
+    const c = 'c';
+    const d = 'd';
+    const e = 'e';
+    const f = 'f';
 
-    a + "_" + b + "_" + c + "_" + d + "_" + e + "_" + f;
+    a + '_' + b + '_' + c + '_' + d + '_' + e + '_' + f;
   }
 
   console.timeEnd(logName);
@@ -285,7 +285,7 @@ const normalJoin = function () {
 
 window.onload = function () {
   const showResult = function () {
-    console.log("finish!");
+    console.log('finish!');
   };
 
   // emptyLoop.js

@@ -1,6 +1,6 @@
 // プロトタイプの生成 ---------------------------
 const generatePrototype = function () {
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
 
   console.time(logName);
 
@@ -14,7 +14,7 @@ const generatePrototype = function () {
 
 // クラスの生成 ---------------------------
 const generateClass = function () {
-  const logName = current.name + ":" + current.ret;
+  const logName = current.name + ':' + current.ret;
 
   console.time(logName);
 
