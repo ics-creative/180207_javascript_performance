@@ -1,6 +1,6 @@
 window.onload = function () {
   const showResult = function () {
-    console.log("finish!");
+    console.log('finish!');
   };
 
   // emptyLoop.js
