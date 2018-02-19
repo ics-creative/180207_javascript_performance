@@ -136,7 +136,7 @@ const letLoop = function () {
   current.ret++;
 };
 
-// 普通の関数呼び出し ----------------------------
+// 関数呼び出し ----------------------------
 const execFunc1 = function () {
 
   const logName = current.name + ':' + current.ret;
@@ -263,7 +263,7 @@ const templateLiteral = function () {
   current.ret++;
 };
 
-// 普通に文字列を結合する ----------------------------
+// プラス演算子で文字列を結合する ----------------------------
 const normalJoin = function () {
   const logName = current.name + ':' + current.ret;
   console.time(logName);

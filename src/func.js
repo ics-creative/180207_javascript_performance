@@ -1,4 +1,4 @@
-// 普通の関数呼び出し ----------------------------
+// 関数呼び出し ----------------------------
 const execFunc1 = function () {
 
   const logName = current.name + ':' + current.ret;

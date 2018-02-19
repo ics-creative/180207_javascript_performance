@@ -18,7 +18,7 @@ const templateLiteral = function () {
   current.ret++;
 };
 
-// 普通に文字列を結合する ----------------------------
+// プラス演算子で文字列を結合する ----------------------------
 const normalJoin = function () {
   const logName = current.name + ':' + current.ret;
   console.time(logName);
